@@ -1,6 +1,7 @@
 import PaginationBar from "@/components/PaginationBar";
 import ProductCard from "@/components/ProductCard";
 import { prisma } from "@/lib/db/prisma";
+import { PrismaClient } from "@prisma/client";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -66,3 +67,6 @@ export default async function Home({
     </div>
   );
 }
+// const prisma = new PrismaClient({
+//   log: ['query', 'info', 'warn', 'error']
+// });
